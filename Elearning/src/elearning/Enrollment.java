@@ -5,20 +5,31 @@
  */
 package elearning;
 
+import java.util.ArrayList;
+
+
 /**
  *
  * @author kirubel
  */
 public class Enrollment {
     private String dateOfEnrollment;
+    private ArrayList enrollment;
+    private String enrollmentChoice;
+   
+   
     public Enrollment(){
     }
     
-    public void enroll(){
+    
+    public boolean enroll(String dateOfEnrollment,String enrollmentChoice){
         System.out.println("Enrolled!!");
+       return true;
     }
     
-     public void viewEnrollment(){
+     public ArrayList viewEnrollment(){
+         
         System.out.println("View Enrollement!!");
+      return  enrollment;
     }
 }
