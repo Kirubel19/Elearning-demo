@@ -6,27 +6,46 @@
 package elearning;
 
 import java.util.ArrayList;
+import elearning.Authentication;
 
 /**
  *
  * @author kirubel
  */
-public class Institution extends Authentication {
+public class Institution extends Course {
     private String fullName;
     private ArrayList address;
     private String description;
     private String institutionId;
     
+    Authentication auth = new Authentication();
     
     public Institution(){
+      
+        
         
     }
     
-    public void activateInstution(){
-        System.out.println("Activate Instution");
+    public boolean activateInstructor(){
+        System.out.println("Activate Instructor");
+        auth.getId();
+        return true;
     }
-     public void deactivateInstution(){
-        System.out.println("Deactivate Instution");
+     public boolean deactivateInstructor(){
+        System.out.println("Deactivate Instructor");
+        auth.getId();
+        return true;
+    }
+     
+      public boolean activateCourse(){
+          getCourseId();
+        System.out.println("Course Activated!");
+        return true;
+    }
+        public boolean deactivateCourse(){
+            getCourseId();
+        System.out.println("Course Deactivated!");
+        return true;
     }
         
     
